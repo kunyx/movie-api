@@ -12,10 +12,10 @@ namespace MovieApi.Controllers
     [ApiController]
     public class MetadataController : ControllerBase
     {
-        private readonly CsvReader _csvReader;
+        private readonly ICsvReader _csvReader;
         private static List<Metadata> _database;
 
-        public MetadataController(CsvReader csvReader)
+        public MetadataController(ICsvReader csvReader)
         {
             _csvReader = csvReader;
             if (_database == null)

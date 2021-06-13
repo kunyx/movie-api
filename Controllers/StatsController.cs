@@ -12,9 +12,9 @@ namespace MovieApi.Controllers
     [ApiController]
     public class StatsController : ControllerBase
     {
-        private readonly CsvReader _csvReader;
+        private readonly ICsvReader _csvReader;
 
-        public StatsController(CsvReader csvReader)
+        public StatsController(ICsvReader csvReader)
         {
             _csvReader = csvReader;
         }

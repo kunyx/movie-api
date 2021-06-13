@@ -8,7 +8,7 @@ using MovieApi.Models;
 
 namespace MovieApi.CsvData
 {
-    public class CsvReader
+    public class CsvReader : ICsvReader
     {
         public CsvReader()
         { }
